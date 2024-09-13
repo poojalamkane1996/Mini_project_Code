@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>My Form</h1>
+    <form id="myform">
+        <input type="text"  name="name" placeholder="enter username" id="username"><br><br>
+        <input type="password" name="password" placeholder="enter passowrd" id="password"><br><br>
+        <input type="submit">
+        <input type="reset">
+        <p id="result"></p>
+
+        
+    </form>
+    <p id="textcolor">POOJA</p>
+        <button id="red" onclick="red()">ChnageToRed</button>
+
+    <script>
+        const myform=document.getElementById("myform");
+        myform.addEventListener("submit",myfunction);
+        function myfunction(e){
+            e.preventDefault();
+            const username=document.getElementById("username").value;
+            const passowrd=document.getElementById("password").value;
+            const result=document.getElementById("result");
+            console.log(username,passowrd);
+            result.innerHTML="candidate username id "+ username+"\nand passowrd is "+passowrd;
+
+
+        }
+        // function red(){
+        //     const redbtn=document.getElementById("textcolor");
+        //     console.log(redbtn)
+        //     const colr=redbtn.style.color="red"
+        // }
+        const red=document.getElementById("red");
+        red.addEventListener("click",redbt);
+        function redbt(){
+            const redbtn=document.getElementById("textcolor");
+            console.log(redbtn)
+            const colr=redbtn.style.color="red"
+        }
+</script>
+</body>
+</html>

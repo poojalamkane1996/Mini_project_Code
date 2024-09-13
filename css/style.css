@@ -1,0 +1,150 @@
+*{
+    font-family: system-ui;
+    font-size: 16px;
+}
+
+
+/*nav bar link decoration */
+.navbar-shadow {
+    box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+}
+.navbar-light .navbar-nav .nav-link {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 13px;
+    text-decoration: none;
+    color: #c514d0;
+    transition: 0.3s ease-in-out;
+    border-bottom: 4px solid transparent;
+    margin: 0 20px;
+    padding: 20px 0;
+   font-weight: bolder;
+}
+.navbar-light .navbar-nav .nav-link{
+    
+    position: relative;
+    text-decoration: none;
+    color: #c514d0;
+   
+}
+.navbar-light .navbar-nav .nav-link::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background:
+    
+    linear-gradient(
+      to right,
+      rgba(255, 0, 0, 1),
+      rgba(255, 0, 180, 1),
+      rgba(0, 100, 200, 1)
+  );
+    bottom: 10px;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+    
+  
+  
+ }
+    
+ .navbar-light .navbar-nav .nav-link:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+
+/*Glowing Text code*/
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 30% auto;
+  color: #fff;
+  background-clip: text;
+  text-emphasis-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 25px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 20% center;
+  }
+}
+
+/*serach icon*/
+.serach_icon{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #DA22FF 0%, #f021bd  51%, #DA22FF  100%);
+  
+    text-align: center;
+    
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    text-decoration: none;
+    display: block;
+    border: none;
+    height: 40px;
+    width: 100px;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #e014bb;
+    transition: 0.5s;
+    text-decoration: none;
+  }
+         
+  .btn-grad_1 {
+    background-image: linear-gradient(to right, #fc00ff 0%, #00dbde  51%, #fc00ff  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 20px;
+    display: block;
+    font-weight: bolder;
+    border: none;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #e11bcd;
+    text-decoration: none;
+    font-weight: bolder;
+  }
+ ul li{
+list-style-type: none; }
+  
+ .bg_color{
+  background-color: rgb(241, 236, 236);
+  border: none;
+  height: 50px;
+ }
